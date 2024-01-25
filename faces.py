@@ -120,7 +120,7 @@ if __name__ == "__main__":
 
     images = []
 
-    with os.scandir('/home/widhold/Documents/py/media/') as it:
+    with os.scandir('./media/') as it: #path to the pictures
         for entry in it:
             if entry.name.endswith(".png") and entry.is_file():
                 images.append(entry.path)
